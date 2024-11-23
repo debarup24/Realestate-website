@@ -18,13 +18,13 @@ const Header = () => {
         </h2>
         <div className="space-x-6 mt-16">
           <a
-            href=""
-            className="border border-white bg-transparent hover:bg-slate-800 px-8 py-3 rounded"
+            href="#Projects"
+            className="border border-white bg-transparent hover:bg-slate-700 px-8 py-3 hover:bg-opacity-25 rounded"
           >
             Projects
           </a>
           <a
-            href=""
+            href="#Contact"
             className="bg-blue-600 hover:bg-blue-900 px-8 py-3 rounded"
           >
             Contact Us
