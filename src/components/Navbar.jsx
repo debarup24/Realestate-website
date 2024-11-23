@@ -28,10 +28,10 @@ const Navbar = () => {
           <a href="#Header" className="cursor-pointer hover:text-gray-600">
             Home
           </a>
-          <a href="#Header" className="cursor-pointer hover:text-gray-600">
+          <a href="#About" className="cursor-pointer hover:text-gray-600">
             About
           </a>
-          <a href="#Header" className="cursor-pointer hover:text-gray-600">
+          <a href="#Projects" className="cursor-pointer hover:text-gray-600">
             Projects
           </a>
           <a href="#Header" className="cursor-pointer hover:text-gray-600">
