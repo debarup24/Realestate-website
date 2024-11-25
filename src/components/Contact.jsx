@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -34,8 +35,12 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden bg-gradient-to-b from-yellow-50 "
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden bg-white "
       id="Contact"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center ">
@@ -84,11 +89,11 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 text-white shadow-md shadow-purple-500 py-2 px-12 mb-10 rounded hover:bg-blue-950 ">
+        <button className="bg-blue-600 text-white shadow-md shadow-slate-900 py-2 px-12 mb-10 rounded hover:bg-blue-950 ">
           {result ? result : "Send Message"}
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
