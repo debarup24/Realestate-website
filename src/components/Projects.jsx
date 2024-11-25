@@ -1,9 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useInsertionEffect, useState } from "react";
 import { assets, projectsData } from "../assets/assets";
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(1);
+
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      window.innerWidth >= 1024
+        ? setCardsToShow(projectsData.length)
+        : setCardsToShow(1);
+    };
+    updateCardsToShow(); // we have to call this func when we change the screen size also , so add an event listner
+
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
 
   const nextProject = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projectsData.length);
