@@ -55,13 +55,13 @@ const Contact = () => {
 
       <form
         onSubmit={onSubmit}
-        className="max-w-2xl mx-auto text-gray-600 pt-8"
+        className="max-w-2xl mx-auto text-gray-700 pt-8"
       >
         <div className=" flex flex-wrap">
           <div className="w-full md:w-1/2 text-left ">
             Your Name
             <input
-              className=" w-full border border-gray-300 rounded py-3 px-4 mt-2 "
+              className=" w-full border border-gray-400 rounded py-3 px-4 mt-2 "
               type="text"
               name="Name"
               placeholder="Your Name"
@@ -71,7 +71,7 @@ const Contact = () => {
           <div className="w-full md:w-1/2 text-left md:pl-4">
             Your E-mail
             <input
-              className=" w-full border border-gray-300 rounded py-3 px-4 mt-2 "
+              className=" w-full border border-gray-400 rounded py-3 px-4 mt-2 "
               type="Email"
               name="Email"
               placeholder="Your E-mail"
@@ -83,7 +83,7 @@ const Contact = () => {
         <div className="my-6 text-left">
           Message{" "}
           <textarea
-            className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none "
+            className="w-full border border-gray-400 rounded py-3 px-4 mt-2 h-48 resize-none "
             name="Message"
             placeholder="Message"
             required

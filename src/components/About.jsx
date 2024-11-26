@@ -57,7 +57,7 @@ const About = () => {
             inventore vitae ullam corporis ad eius architecto iusto.
           </p>
 
-          <button className="bg-blue-500 hover:bg-blue-700 text-white px-8 py-2 rounded">
+          <button className="bg-blue-500 hover:bg-blue-700 shadow-md shadow-gray-800 text-white px-8 py-2 rounded">
             Learn More
           </button>
         </div>
