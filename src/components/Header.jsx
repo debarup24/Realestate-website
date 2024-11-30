@@ -13,6 +13,7 @@ const Header = () => {
       <Navbar />
       {/* <VideoBg /> */}
 
+      /* adding framer motion eff */
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
