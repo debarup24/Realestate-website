@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="w-full md:w-1/3 mb-8 md:mb-0 ">
           <img src={assets.logo_dark} alt="" />
           <p className="mt-4 text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            Lorem ipsum dolor sit const consectetur adipisicing elit. Esse,
             corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Labore, tempore!
+            Labore, iopsm tempore!
           </p>
         </div>
 
